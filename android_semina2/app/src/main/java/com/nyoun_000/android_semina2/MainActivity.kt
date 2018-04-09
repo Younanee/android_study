@@ -47,12 +47,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_main_home.setOnClickListener(this)
         btn_main_mine.setOnClickListener(this)
         btn_main_add.setOnClickListener(this)
-
-
-
-
-
-
     }
 
     fun addFragment(fragment: Fragment) : Unit{

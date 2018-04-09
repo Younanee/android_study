@@ -10,6 +10,20 @@
         android:layout_height="120dp"
         android:background="#faf9fa"
         android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Instagram에 Facebook 친구 초대하기"/>
+        <Button
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:background="#039be5"
+            android:text="친구보기"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
     </LinearLayout>
 
     <View
@@ -17,12 +31,132 @@
         android:layout_height="2dp"
         android:background="#e2e3e3"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="#faf9fa"
-        android:orientation="horizontal">
-    </LinearLayout>
+        android:background="#faf9fa">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/pic1"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="#5395e9"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="피카츄"
+                    android:textSize="8sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/inform"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textAlignment="center"
+                            android:text="게시물"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="50"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textAlignment="center"
+                            android:text="팔로워"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="291"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textAlignment="center"
+                            android:text="팔로잉"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="549"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="프로필 수정"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
@@ -35,11 +169,13 @@
         android:orientation="horizontal"
         android:background="#faf9fa">
         <ImageView
+            android:id="@+id/iv_all_of_fragment_mine"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_weight="1"
             android:src="@drawable/my_all_on"/>
         <ImageView
+            android:id="@+id/iv_align_of_fragment_mine"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_weight="1"
@@ -50,6 +186,7 @@
             android:layout_weight="1"
             android:src="@drawable/my_tag_off"/>
         <ImageView
+            android:id="@+id/iv_save_of_fragment_mine"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_weight="1"
@@ -57,9 +194,11 @@
 
     </LinearLayout>
 
-    <ImageView
+    <FrameLayout
+        android:id="@+id/mine_tab_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/pic3"/>
+        android:layout_height="match_parent">
+
+    </FrameLayout>
 
 </LinearLayout>
