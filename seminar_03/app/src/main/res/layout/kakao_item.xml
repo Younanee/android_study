@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/item_profile_image"
+            android:layout_centerInParent="true"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@color/colorAccent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:text="Chat Name"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:id="@+id/item_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="5dp"
+                android:text="date"
+                android:layout_centerVertical="true"
+                android:id="@+id/item_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <TextView
+            android:text="preview"
+            android:id="@+id/item_preview_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
+
+
+    </LinearLayout>
+</LinearLayout>
