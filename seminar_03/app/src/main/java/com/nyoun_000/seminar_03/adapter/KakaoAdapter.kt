@@ -26,6 +26,8 @@ class KakaoAdapter(private var kakaoItems : ArrayList<KakaoData>) : RecyclerView
 
     override fun getItemCount(): Int = kakaoItems.size
 
+
+    //요기서 어떻게 어떻게 코딩하면 사진 눌렀을때 리스너 달 수 있대요
     override fun onBindViewHolder(holder: KakaoViewHolder, position: Int) {
         holder.kakaoProfile.setImageResource(kakaoItems[position].profile)
         holder.kakaoName.text = kakaoItems[position].name
