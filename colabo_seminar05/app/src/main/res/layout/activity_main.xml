@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/back_2"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/formation_tv"
+            android:layout_marginTop="68.89dp"
+            android:textAlignment="center"
+            android:text="Formation"
+            android:textSize="19dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/beyonce_tv"
+            android:layout_marginTop="8.99dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/formation_tv"
+            android:textSize="17dp"
+            android:textColor="#FF4B59"
+            android:text="Beyonce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/beyonc_rl"
+            android:layout_marginTop="8.99dp"
+            android:layout_width="183.59dp"
+            android:layout_height="183.59dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/beyonce_tv">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beyonce" />
+            <ImageView
+                
+                android:src="@drawable/sound_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/gasa_1"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/beyonc_rl"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="#FF4B59"
+            android:text="Y ‘ all haters corny with that"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/gasa_2"
+            android:layout_below="@+id/gasa_1"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:text="baby hair and afros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginHorizontal="28.53dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/gasa_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#707070"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="00:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#FF4B59"
+                android:layout_alignParentRight="true"
+                android:text="01:30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+            <RelativeLayout
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="24.21dp"
+                android:layout_width="40.68dp"
+                android:layout_height="40.68dp">
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_playoption"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/under_1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
