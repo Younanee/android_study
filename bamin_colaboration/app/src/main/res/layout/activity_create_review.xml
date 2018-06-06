@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateReviewActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/create_review_appbar_tb"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/A200"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageView
+            android:id="@+id/create_review_appbar_back_btn_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:background="?selectableItemBackgroundBorderless"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/create_review_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="사진"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatImageView
+                android:src="@drawable/ic_image_black_24dp"
+                android:id="@+id/create_review_get_img_iv"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"/>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/create_review_add_btn_bt"
+                android:text="등록"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
