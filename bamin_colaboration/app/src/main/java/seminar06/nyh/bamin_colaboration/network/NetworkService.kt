@@ -1,5 +1,8 @@
 package seminar06.nyh.bamin_colaboration.network
 
+import com.user.sopt_delivery.get.GetMainResponse
+import com.user.sopt_delivery.post.PostSigninResponse
+import com.user.sopt_delivery.post.PostSignupResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -29,4 +32,23 @@ interface NetworkService {
             @Path("store_idx") store_idx : Int
     ) : Call<PostReviewRequest>
 
+    // 메인 카테고리를 받아오기 위한 GET
+    @GET("main")
+    fun getContent() : Call<GetMainResponse>
+
+    // 로그인 정보를 확인하기 위한 POST
+    @FormUrlEncoded
+    @POST("signin")
+    fun postSignin(
+            @Field("user_id") id : String,
+            @Field("user_pw") pw : String
+    ) : Call<PostSigninResponse>
+
+    // 회원가입을 위한 POST
+    @FormUrlEncoded
+    @POST("signup")
+    fun postSignup(
+            @Field("user_id") id : String,
+            @Field("user_pw") pw : String
+    ) : Call<PostSignupResponse>
 }

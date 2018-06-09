@@ -13,14 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".StoreActivity">
+        </activity>
+        <activity android:name=".CreateReviewActivity" />
+        <activity android:name="com.hyeong.hapdong.MainActivity" >
+        </activity>
+        <activity android:name="com.hyeong.hapdong.LoginActivity" />
+        <activity android:name="com.hyeong.hapdong.LoginJoinActivity" />
+        <activity android:name="com.hyeong.hapdong.KoreaFoodActivity" />
+        <activity android:name="com.hyeong.hapdong.RegisterActivity"></activity>
+
+        <activity android:name="com.user.sopt_delivery.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateReviewActivity" />
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.user.sopt_delivery.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.user.sopt_delivery.InitActivity" />
+        <activity
+            android:name="com.user.sopt_delivery.SignActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.user.sopt_delivery.CategoryActivity"></activity>
     </application>
 
 </manifest>
